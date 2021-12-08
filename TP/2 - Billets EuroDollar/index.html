@@ -18,27 +18,7 @@
 <body>
     <script>
         let somme = prompt("Quel est le montant souhaité", "Saisir le montant :");
-        var tabBillets = [500,200,100,50,20,10,5,2,1];
-        var tabNb = [0,0,0,0,0,0,0,0,0];
-
-        var aPayer = [586,531,698,186,998,666,125,635,186,8696];
-        let total = 0;
-        var moy = 0;
-
-        var messageFinal = "il faut :\n"
-
-        for (var i = 0; i < tabBillets.length; i++) {
-            if(somme % tabBillets[i] != somme){
-                var nb = parseInt(Math.floor(somme/tabBillets[i]));
-                tabNb[i] += (nb);
-                somme -= nb*tabBillets[i];
-                if(nb != 0)
-                    messageFinal =+ tabNb[i] + " billets de "+tabBillets[i]+"\n";
-            }
-        }
-
-        alert(fString);
-
+        alert(billetDollarEuro(somme,1));
     </script>
 
 </body>
