@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#">
+<head lang="fr">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Basic_web</title>
+    <meta name="description" content="basic_description.">
+    <!-- Other -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/computer.css">
+    <link rel="stylesheet" href="css/scomputer.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/phone.css">
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+</head>
+<body>
+    <script>
+        let somme = prompt("Quel est le montant souhaité", "Saisir le montant :");
+        var tabBillets = [500,200,100,50,20,10,5,2,1];
+        var tabNb = [0,0,0,0,0,0,0,0,0];
+
+        var aPayer = [586,531,698,186,998,666,125,635,186,8696];
+        let total = 0;
+        var moy = 0;
+
+        var messageFinal = "il faut :\n"
+
+        for (var i = 0; i < tabBillets.length; i++) {
+            if(somme % tabBillets[i] != somme){
+                var nb = parseInt(Math.floor(somme/tabBillets[i]));
+                tabNb[i] += (nb);
+                somme -= nb*tabBillets[i];
+                if(nb != 0)
+                    messageFinal =+ tabNb[i] + " billets de "+tabBillets[i]+"\n";
+            }
+        }
+
+        alert(fString);
+
+    </script>
+
+</body>
+</html>
+
+
+
