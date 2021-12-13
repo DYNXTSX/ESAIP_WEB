@@ -1,0 +1,17 @@
+body, html{
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100%;
+    margin : 0;
+}
+
+body{
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #f6f6f6;
+    position: absolute;
+    margin : 0;
+   }
+
+* {
+    box-sizing: border-box;
+}

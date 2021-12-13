@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' >
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div>Veuillez saisir le sport à ajouter :
+    <input type='text' id='sportSaisie' name="nomSport"/>
+    <button onclick='mainFunction()' >Ajouter ce sport</button>
+
+    <br/>ajouter dans :
+    <label for='ckSportPrefere' >Sport préféré </label>
+    <input checked="checked" type='radio' id='ckSportPrefere' name='choixListeSport' value='0' />
+
+    <label for='ckSportDeteste' >Sport détesté </label>
+    <input type='radio' id='ckSportDeteste' name='choixListeSport' value='1' />
+</div>
+
+<div style='display:-webkit-flex;' >
+    <div style='background-color:#92D050;padding:10px;margin:10px;' >
+        Liste des sports préférés
+        <ul id='listSportPrefere' >
+        </ul>
+    </div>
+    <div  style='background-color:#4370A8;padding:10px;margin:10px;' >
+        Liste des sports détestés
+        <ul id='listSportDeteste' ></ul>
+    </div>
+</div>
+</body>
+</html>

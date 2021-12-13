@@ -1,0 +1,31 @@
+<html>
+<head></head>
+<body>
+<p id="p1" >Bonjour</p>
+<p id="p2" style="display:none;" >Hello</p>
+<button onclick='switchText();' >switcher</button>
+<script>
+
+    function switchText(){
+        const p1 = document.querySelector("#p1");
+        const p2 = document.querySelector("#p2");
+
+        if(p1.style.display !== "none")
+        {
+            changeDisplay(p1, p2)
+        }else{
+            changeDisplay(p2, p1)
+        }
+    }
+
+    function changeDisplay(text1, text2){
+        (text1).style.display = "none";
+        (text2).style.display = "block";
+    }
+
+</script>
+</body>
+</html>
+
+
+
